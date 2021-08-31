@@ -21,7 +21,6 @@ public class PayPalHttpService {
 				System.out.println("Pagamento com sucesso via HTTP");
 				return true;
 			}
-			return false;
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
