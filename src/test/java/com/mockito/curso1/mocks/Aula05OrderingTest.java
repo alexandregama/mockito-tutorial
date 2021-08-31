@@ -10,10 +10,10 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
 import org.mockito.Mockito;
 
-import com.mockito.sistema.CursosDao;
-import com.mockito.sistema.CursosService;
+import com.mockito.curso1.CursosDao;
+import com.mockito.curso1.CursosService;
 
-public class Aula04OrderingTest {
+public class Aula05OrderingTest {
 
 	@Test
 	void deveriaValidarQueSalvouEBuscouUmaLinguagem() throws Exception {
