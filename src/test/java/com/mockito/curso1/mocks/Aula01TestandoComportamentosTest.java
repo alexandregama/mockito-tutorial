@@ -7,8 +7,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import com.mockito.sistema.CursosDao;
-import com.mockito.sistema.CursosService;
+import com.mockito.curso1.CursosDao;
+import com.mockito.curso1.CursosService;
 
 public class Aula01TestandoComportamentosTest {
 	

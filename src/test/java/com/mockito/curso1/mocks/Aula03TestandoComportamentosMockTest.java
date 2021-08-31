@@ -9,27 +9,29 @@ import static org.mockito.Mockito.verify;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.mockito.curso1.CursosDao;
 import com.mockito.curso1.CursosService;
 
-public class Aula02TestandoComportamentosMockTest {
+@ExtendWith(MockitoExtension.class)
+public class Aula03TestandoComportamentosMockTest {
+	
+	@Mock
+	private List linguagens;
 	
 	@Test
 	@SuppressWarnings("unchecked")
 	void deveriaValidarQueChamamosOMetodoDeAdicionar() throws Exception {
-		List<String> linguagens = mock(List.class);
-		
 		linguagens.add("Java");
 
 		verify(linguagens).add("Java");
 	}
 	
 	@Test
-	@SuppressWarnings("unchecked")
-	void deveriaValidarQueChamamosOMetodoDeAdicionarDuasVezes() throws Exception {
-		List<String> linguagens = mock(List.class);
-		
+	void deveriaValidarQueChamamosOMetodoDeAdicionarDuasVezes(@Mock List<String> linguagens) throws Exception {
 		linguagens.add("Java");
 		linguagens.add("Ruby");
 		

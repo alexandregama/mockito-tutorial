@@ -15,15 +15,19 @@ import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
 
-import com.mockito.sistema.CursosDao;
-import com.mockito.sistema.CursosService;
+import com.mockito.curso1.CursosDao;
+import com.mockito.curso1.CursosService;
 
-public class Aula03MockitoInteractionsTest {
+public class Aula04MockitoInteractionsTest {
+	
+	@Mock
+	private CursosDao dao;
 
 	@Test
 	void deveriaRetornarUmaLinguagemPeloNome() throws Exception {
-		CursosDao dao = mock(CursosDao.class);
 		CursosService cursosService = new CursosService(dao);
 		
 		cursosService.adiciona("Java");

@@ -1,4 +1,4 @@
-package com.mockito.sistema;
+package com.mockito.curso1;
 
 import java.util.ArrayList;
 import java.util.List;

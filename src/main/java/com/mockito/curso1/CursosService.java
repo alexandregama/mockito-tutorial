@@ -1,4 +1,4 @@
-package com.mockito.sistema;
+package com.mockito.curso1;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,6 @@ public class CursosService {
 	}
 	
 	public void adiciona(String linguagem) {
-		dao.findByName(linguagem);
 		linguagens.add(linguagem);
 	}
 	
